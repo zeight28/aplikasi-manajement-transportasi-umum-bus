@@ -1,0 +1,196 @@
+<mxfile host="Electron">
+  <diagram name="Draft UML Class" id="draft-uml">
+    <mxGraphModel dx="3043" dy="1229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kdr" parent="1" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Kendaraan" vertex="1">
+          <mxGeometry height="216" width="260" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- id_kendaraan: str" vertex="1">
+          <mxGeometry height="26" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- plat_nomor: str" vertex="1">
+          <mxGeometry height="26" width="260" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- kapasitas: int" vertex="1">
+          <mxGeometry height="26" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- tarif_per_km: float" vertex="1">
+          <mxGeometry height="26" width="260" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="kdr" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ get_info(): str" vertex="1">
+          <mxGeometry height="26" width="260" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;" value="+ hitung_tarif(jarak: float): float" vertex="1">
+          <mxGeometry height="26" width="260" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="kdr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ cek_kapasitas(jumlah: int): bool" vertex="1">
+          <mxGeometry height="26" width="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eko" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#B9E0A5;strokeColor=#000000;" value="BusEkonomi" vertex="1">
+          <mxGeometry height="60" width="230" x="-90" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="eko" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="eko" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ hitung_tarif(jarak: float): float" vertex="1">
+          <mxGeometry height="26" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="eks" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#B9E0A5;strokeColor=#000000;" value="BusEksekutif" vertex="1">
+          <mxGeometry height="86" width="230" x="200" y="339" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="eks" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- fasilitas: list" vertex="1">
+          <mxGeometry height="26" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="eks" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="eks" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ hitung_tarif(jarak: float): float" vertex="1">
+          <mxGeometry height="26" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jdw" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Jadwal" vertex="1">
+          <mxGeometry height="242" width="250" x="400" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- id_jadwal: str" vertex="1">
+          <mxGeometry height="26" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- asal: str" vertex="1">
+          <mxGeometry height="26" width="250" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- tujuan: str" vertex="1">
+          <mxGeometry height="26" width="250" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- tanggal: str" vertex="1">
+          <mxGeometry height="26" width="250" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- jam_berangkat: str" vertex="1">
+          <mxGeometry height="26" width="250" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- jarak_km: float" vertex="1">
+          <mxGeometry height="26" width="250" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="jdw" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ get_info(): str" vertex="1">
+          <mxGeometry height="26" width="250" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="jdw" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ validasi_jadwal(): bool" vertex="1">
+          <mxGeometry height="26" width="250" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="pmt" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="PemesananTiket" vertex="1">
+          <mxGeometry height="294" width="260" x="780" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- id_pemesanan: str" vertex="1">
+          <mxGeometry height="26" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- tanggal_pesan: str" vertex="1">
+          <mxGeometry height="26" width="260" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- jumlah_kursi: int" vertex="1">
+          <mxGeometry height="26" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- daftar_kursi: list" vertex="1">
+          <mxGeometry height="26" width="260" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- total_harga: float" vertex="1">
+          <mxGeometry height="26" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- status: str" vertex="1">
+          <mxGeometry height="26" width="260" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" parent="pmt" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ pilih_kursi(nomor: int): void" vertex="1">
+          <mxGeometry height="26" width="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ hitung_total(): float" vertex="1">
+          <mxGeometry height="26" width="260" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ batalkan(): void" vertex="1">
+          <mxGeometry height="26" width="260" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="pmt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ cetak_tiket(): str" vertex="1">
+          <mxGeometry height="26" width="260" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="plg" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFCCE6;strokeColor=#ae4132;" value="Pelanggan" vertex="1">
+          <mxGeometry height="216" width="240" x="790" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- id_pelanggan: str" vertex="1">
+          <mxGeometry height="26" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- nama: str" vertex="1">
+          <mxGeometry height="26" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- no_hp: str" vertex="1">
+          <mxGeometry height="26" width="240" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- riwayat_tiket: list" vertex="1">
+          <mxGeometry height="26" width="240" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" parent="plg" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ tambah_riwayat(pesanan): void" vertex="1">
+          <mxGeometry height="26" width="240" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ lihat_riwayat(): list" vertex="1">
+          <mxGeometry height="26" width="240" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" parent="plg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ get_info(): str" vertex="1">
+          <mxGeometry height="26" width="240" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;horizontal=1;startSize=44;html=1;collapsible=0;fillColor=#FF6666;strokeColor=#b85450;" value="&lt;&lt;exception&gt;&gt;&lt;br&gt;KursiPenuhError" vertex="1">
+          <mxGeometry height="44" width="200" x="1120" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;horizontal=1;startSize=44;html=1;collapsible=0;fillColor=#FF6666;strokeColor=#b85450;" value="&lt;&lt;exception&gt;&gt;&lt;br&gt;PelangganTidakTerdaftarError" vertex="1">
+          <mxGeometry height="44" width="280" x="1120" y="506" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" edge="1" parent="1" source="eko" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="kdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g2" edge="1" parent="1" source="eks" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="kdr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="jdw" style="endArrow=none;html=1;rounded=0;verticalAlign=bottom;" target="kdr" value="menggunakan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1s" connectable="0" parent="a1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.8" as="geometry" />
+        </mxCell>
+        <mxCell id="a1t" connectable="0" parent="a1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.8" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="pmt" style="endArrow=none;html=1;rounded=0;verticalAlign=bottom;" target="jdw" value="untuk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2s" connectable="0" parent="a2" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.8" as="geometry" />
+        </mxCell>
+        <mxCell id="a2t" connectable="0" parent="a2" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.8" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="plg" style="endArrow=none;startArrow=diamondThin;startFill=0;startSize=16;html=1;rounded=0;" target="pmt" value="riwayat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3s" connectable="0" parent="a3" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8" as="geometry" />
+        </mxCell>
+        <mxCell id="a3t" connectable="0" parent="a3" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" edge="1" parent="1" source="pmt" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;verticalAlign=bottom;" target="e1" value="&lt;&lt;raises&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" edge="1" parent="1" source="plg" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;verticalAlign=bottom;" target="e2" value="&lt;&lt;raises&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
