@@ -1,5 +1,6 @@
 # aplikasi-manajement-transportasi-umum-bus
 
+```mermaid
 classDiagram
     class Kendaraan {
         - id_kendaraan: str
@@ -71,3 +72,4 @@ classDiagram
 
     PemesananTiket ..> KursiPenuhError : raises
     Pelanggan ..> PelangganTidakTerdaftarError : raises
+```
