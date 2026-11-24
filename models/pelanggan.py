@@ -1,3 +1,4 @@
+
 class Pelanggan:
     def __init__(self, id_pelanggan, nama,
                  no_hp, riwayat_tiket):
@@ -7,10 +8,14 @@ class Pelanggan:
         self.riwayat_tiket = riwayat_tiket
 
     def tambah_riwayat(self, pesanan):
-        pass
+        self.riwayat_tiket.append(pesanan)
 
     def lihat_riwayat(self):
-        pass
+        return self.riwayat_tiket
 
     def get_info(self):
-        pass
+        return (
+            f"ID Pelanggan: {self.id_pelanggan}\n"
+            f"Nama: {self.nama}\n"
+            f"No. HP: {self.no_hp}"
+        )
