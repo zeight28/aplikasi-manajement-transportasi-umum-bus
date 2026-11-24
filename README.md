@@ -41,10 +41,10 @@ aplikasi-management-transportasi-umum-bus/
 - Riwayat pemesanan
 
 ## Anggota Kelompok
-- [Nama anggota 1]
-- [Nama anggota 2]
-- [Nama anggota 3]
-- [Nama anggota 4]
+1. Sausan Aliyah Syarifah (60225061)
+2. Melani Nafisa (60225077)
+3. Bagus Widagdo (60225119)
+4. Mohammad Amartana Nibras (60225147)
 
 ## Status Proyek
 Tahap pengembangan: Skeleton Code dan persiapan implementasi.
