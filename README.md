@@ -1,5 +1,5 @@
 
-# Sistem Pemesanan Tiket Bus
+# Aplikasi Manajement Transportasi Umum Bus
 
 ## Deskripsi
 Proyek ini merupakan aplikasi Sistem Pemesanan Tiket Bus yang dikembangkan menggunakan bahasa pemrograman Python dengan konsep Object-Oriented Programming (OOP).
